@@ -1,0 +1,4 @@
+# Project exclude paths
+/venv/
+/emoji-predictor/emoji_weights.h5
+/emoji-predictor/glove.6B.50d.txt
