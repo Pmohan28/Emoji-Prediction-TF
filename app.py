@@ -39,13 +39,13 @@ app = Flask(__name__)
 
 def get_model():
     global model
-    model = load_model('C:\E Drive\Mixed Materials\AI-ML\Coursera\Deep-Learning-Coursera-master\Deep-Learning-Coursera-master\Sequence Models\Emjoify\emoji-predictor\emoji_weights.h5')
+    model = load_model('emoji_weights.h5')
     print('Model Successfully loaded')
 
 
 graph = tf.compat.v1.get_default_graph()
 
-tokenizer = pickle.load(open('C:/E Drive/Mixed Materials/AI-ML/Coursera/Deep-Learning-Coursera-master/Deep-Learning-Coursera-master/Sequence Models/Emjoify/emoji-predictor/tokenizer.pickle', 'rb'))
+tokenizer = pickle.load(open('emoji-predictor/tokenizer.pickle', 'rb'))
 
 
 @app.route('/')
