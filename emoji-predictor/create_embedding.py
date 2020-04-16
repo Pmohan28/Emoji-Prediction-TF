@@ -104,9 +104,7 @@ def create_lstm_model(inputshape, embedding_layer):
     X = LSTM(128)(X)
     X= Dropout(0.40)(X)
     X = Dense(7, activation='softmax')(X)
-    # X = Activation('softmax')(X)
     model = Model(sentences_indices, X)
-    # model = Model(Input,Output)
     return model
 
 
