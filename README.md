@@ -8,3 +8,9 @@ Clone the repository or download it. Run the app.py which will allow the webser 
 Update route is still in progress and needs modification to update the result
 
 
+
+Next steps:
+
+1-Quantization for current model and implement it on mobile devices.
+
+2-Improve the browser based prediction of model by implementing NN training in javascript.
